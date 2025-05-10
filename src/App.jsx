@@ -6,6 +6,7 @@ import Secretaria from './pages/Secretaria'
 import Institucion from './pages/Institucion'
 import Calendario from './pages/Calendario'
 import { Route, Routes } from 'react-router'
+import Alumnos from './pages/Alumnos'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Navbar />} >
           <Route path="/inicio" element={<Home />} />
           <Route path="/secretaria" element={<Secretaria />} />
+          <Route path="/secretaria/alumnos" element={<Alumnos />} />
           <Route path="/institucion" element={<Institucion />} />
           <Route path="/calendario" element={<Calendario />} />
         </Route>
