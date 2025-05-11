@@ -2,7 +2,7 @@ import React from 'react'
 
 const Secretaria = () => {
   return (
-    <div>Secretaria</div>
+    <div>Pagina de secretaria</div>
   )
 }
 
