@@ -1,12 +1,34 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de ejemplo para demostrar el uso de React Router Dom para mostrar contenido de diferentes páginas.
+También se incluye tailwind para mostrar en pasos simples el uso de la libreria en react.
 
-Currently, two official plugins are available:
+# Tutorial
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clonar el proyecto en alguna carpeta local
 
-## Expanding the ESLint configuration
+````bash
+git clone https://github.com/gus0117/react-web-site.git
+````
+Luego, dentro de la carpeta que se clonó, instalar las dependecias necesarias
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+````bash
+npm install
+````
+Una vez instaladas las depedendecias, se puede ejecutar el proyecto de forma local
+
+````bash
+npm run dev
+````
+
+## Librerias usadas y como se instalaron
+
+- React router dom
+Para instalar se utiliza npm
+
+````bash
+npm i react-router-dom
+````
+La notación utilizada en este ejemplo es la declarativa.
+Se prevee utilizar la notación de objetos en otro ejemplo.
+documentación: https://reactrouter.com/start/declarative/routing
