@@ -87,7 +87,7 @@ tipo: descripción breve [autor o autores]
 - `test`: Pruebas
 - `chore`: tareas menores (scripts, configuración, etc.)
 
-Ejemplo:
+**Ejemplos:**
 
 ````bash
 feat: se agrega validación de login [JuanPerez]
@@ -120,3 +120,13 @@ tipo/descripcion-corta
 - `test/` – para agregar o modificar pruebas
 
 - `style/` – para cambios de formato (indentación, espacios, etc.)
+
+**Ejemplos:**
+
+- `feat/agregar-login`
+
+- `fix/error-al-iniciar-sesion`
+
+- `docs/manual-usuario`
+
+- `refactor/limpiar-funcion-calculo`
