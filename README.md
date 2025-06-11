@@ -3,7 +3,7 @@
 Este es un proyecto de ejemplo para demostrar el uso de React Router Dom para mostrar contenido de diferentes páginas.
 También se incluye tailwind para mostrar en pasos simples el uso de la libreria en react.
 
-# Tutorial
+# Tutorial 📓
 
 Clonar el proyecto en alguna carpeta local
 
@@ -21,7 +21,7 @@ Una vez instaladas las depedendecias, se puede ejecutar el proyecto de forma loc
 npm run dev
 ````
 
-## Librerias usadas y como se instalaron
+## Librerias usadas y como se instalaron 🤓
 
 - React router dom
 Para instalar se utiliza npm
@@ -66,7 +66,7 @@ Ejecutar el proyecto
 npm run dev
 ````
 
-## Formato de los commits
+## Formato de los commits 📨
 
 1. **Commits pequeños y enfocados**
 - Cada commit debe representar una única unidad de cambio (Por ejemplo: "agrego validación al login").
@@ -102,7 +102,7 @@ docs: agregada documentación de clase DAO [Grupo2]
 ````
 
 
-## Formato de las branch
+## Formato de las branch 🌳
 
 ````bash
 tipo/descripcion-corta
@@ -130,3 +130,52 @@ tipo/descripcion-corta
 - `docs/manual-usuario`
 
 - `refactor/limpiar-funcion-calculo`
+
+## Compilación y despliegue 🚀
+
+Antes de compilar es necesario cambiar
+
+````js
+<BrowserRouter>
+  <App />
+</BrowserRouter>
+`````
+
+por 
+
+````js
+<HashRouter>
+  <App />
+</HashRouter>
+`````
+
+En el archivo `package.json` agregar
+
+`"homepage":"127.0.0.1/<nombre-proyecto>/",`
+
+y en `vite.config.js` agregar
+
+`base: './',`
+
+````js
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [
+    react(),
+    tailwindcss()],
+    base: './',
+})
+````
+
+Ejecutar el comando
+
+````bash
+npm run build
+````
+
+Esto compilara el proyecto y lo guardará en la carpeta `dist`. Estos archivos son los que se deben agregar a la carpeta dentro del servidor ejemplo `/var/www`
+
